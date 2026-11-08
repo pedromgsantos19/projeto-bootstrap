@@ -1,0 +1,53 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    color: #212529;
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.navbar .nav-link:hover {
+    color: #ffc107;
+}
+
+.hero-banner {
+    min-height: 500px;
+
+    background-image: url("https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.produto-img {
+    height: 200px;
+    object-fit: contain;
+    background-color: white;
+    padding: 10px;
+}
+
+.galeria-img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 575px) {
+    .hero-banner {
+        min-height: 400px;
+        text-align: center;
+    }
+}
